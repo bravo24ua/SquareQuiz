@@ -11,7 +11,7 @@ int main()
 }
 
 int get_squares(void)         // It was not clear from task if N&M are function arguments or should be entered from console.
-// I decided to implement console input because it's more interesting case IMHO.  
+                              // I decided to implement console input because it's more interesting case IMHO.  
 {
     unsigned int n_size = 0;  // N max size is limited UINT_MAX (as soon as there are no limits defined in task description)
     unsigned int m_size = 0;  // M max size is limited UINT_MAX (as soon as there are no limits defined in task description)
@@ -79,7 +79,7 @@ int get_squares(void)         // It was not clear from task if N&M are function 
     }
 
     // Provides Input data formatted according to task requirements
-    printf("Input: N = %u, M = %u\n", n_size, m_size);
+    printf("\n\nInput: N = %u, M = %u\n", n_size, m_size);
 
     // Provides Output data formatted according to task requirements
     printf("Output: ");
@@ -98,7 +98,7 @@ int get_squares(void)         // It was not clear from task if N&M are function 
         }
     }
 
-    if ((n_size == m_size) && (n_size != 0)) // Output for the last square (actually it can be the first one square)
+    // Output for the last square (actually it can be the first one square)
     {
         printf("%ux%u", n_size, m_size);
     }
